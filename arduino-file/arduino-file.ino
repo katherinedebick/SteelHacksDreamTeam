@@ -2,12 +2,12 @@
 // in the #defines
 // public domain, enjoy!
  
-#define REDPIN 5
-#define GREENPIN 6
+#define REDPIN 9
+#define GREENPIN 11
 #define BLUEPIN 13
 #define ORANGEPIN 12
 #define PUPLEPIN
-#define WHITEPIN
+#define WHITEPIN 10
  
 #define FADESPEED 5     // make this higher to slow down
  
@@ -15,14 +15,17 @@ void setup() {
   pinMode(REDPIN, OUTPUT);
   pinMode(GREENPIN, OUTPUT);
   pinMode(BLUEPIN, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
+  pinMode(ORANGEPIN, OUTPUT);
+  pinMode(WHITEPIN, OUTPUT);
 }
  
  
 void loop() {
   int r, g, b;
-  digitalWrite(13, HIGH);
-  digitalWrite(12, HIGH);
-
+  digitalWrite(BLUEPIN, HIGH);
+  digitalWrite(ORANGEPIN, HIGH);
+  digitalWrite(GREENPIN, HIGH);
+  digitalWrite(WHITEPIN, HIGH);
+  digitalWrite(REDPIN, HIGH);
 }
+
